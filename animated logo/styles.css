@@ -1,0 +1,20 @@
+
+#main {position:relative; width:200px;}
+.sprite {
+	width:375px;
+	height:300px;
+	display:block;	
+	background:transparent url(blinking-sprite-300.png) 0 0 no-repeat;
+	margin:3em auto;
+	animation: eyeblink .5s 3.5s steps(12) 3;
+}
+#sprite{
+			width: 375px;
+			height: 300px;
+			background: transparent url(blinking-sprite-300.png);
+		}
+
+@keyframes eyeblink {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -3600px;}
+}

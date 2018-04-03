@@ -1,0 +1,49 @@
+
+
+
+
+.sprite {
+	width:375px;
+	height:300px;
+	display:block;	
+	background:transparent url(blinking-sprite-300.png) 0 0 no-repeat;
+	margin:0 0;
+	animation: eyeblink .5s 3.5s steps(12) 3;
+	background-color:#E8E307;
+}
+#sprite{
+			width: 375px;
+			height: 300px;
+			background: transparent url(blinking-sprite-300.png);
+			transform: scale(0.32, 0.32);
+	background-color:#DE1B1E;
+	
+			
+		}
+
+@keyframes eyeblink {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -3600px;}
+}
+
+/* media queries to scale the animated sprite and rollover effect */
+@media only screen and (max-device-width : 480px) {
+
+	.sprite {
+		transform:scale(0.3, 0.3);
+	}
+}
+@media(max-width:1024px) {
+
+	.sprite {
+		transform:scale(0.6, 0.6);
+		margin:0px auto;
+		
+	}
+}
+@media(min-width:1024px) {
+
+	.sprite {
+		transform:scale(0.8, 0.8);
+	}
+}

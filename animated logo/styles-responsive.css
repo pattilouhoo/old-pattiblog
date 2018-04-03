@@ -1,0 +1,67 @@
+
+
+.sprite {
+	width:375px;
+	height:300px;
+	display:block;	
+	background:transparent url(blinking-sprite-300.png) 0 0 no-repeat;
+	margin:3em auto;
+	animation: eyeblink .5s 3.5s steps(12) 3;
+}
+#sprite{
+			width: 375px;
+			height: 300px;
+			background: transparent url(blinking-sprite-300.png);
+		}
+
+@keyframes eyeblink {
+	0% {background-position: 0 0;}
+	100% {background-position: 0 -3600px;}
+} 
+
+/*
+Responsive CSS Sprite created using: https://responsive-css.us/
+*/
+
+/*div .main {
+	position:relative;
+  	width:100px;
+}
+
+.sprite{
+  width:38.5%;
+	height:0;
+	padding-bottom:38.5%;
+	display:block;	
+	background:transparent url(375-hoiz-blink-sprite.png) 0 0 no-repeat;
+	background-size:1000%;
+	
+	animation: eyeblink .5s 3.5s steps(10) 3;
+}
+#sprite{
+  
+  background: transparent url(375-hoiz-blink-sprite.png);
+}
+
+@keyframes eyeblink {
+	0% {background-position: 0 0;}
+	100% {background-position: 100% 0%;}
+
+}
+*/
+
+
+/*.patti-blinking-logo0014, .patti-blinking-logo0015, .patti-blinking-logo0016, .patti-blinking-logo0017, .patti-blinking-logo0018, .patti-blinking-logo0019, .patti-blinking-logo0020, .patti-blinking-logo0021, .patti-blinking-logo0022, .patti-blinking-logo0023 
+{display:inline-block; overflow:hidden; background-repeat: no-repeat;
+background-image:url(sprite-blink.png);}
+
+.patti-blinking-logo0014 {width: 375px; height: 300px; background-position: 0.00000% 0.00000%; background-size: 546.133%; }
+.patti-blinking-logo0015 {width: 375px; height: 300px; background-position: 22.4148% 0.00000%; background-size: 546.133%; }
+.patti-blinking-logo0016 {width: 375px; height: 300px; background-position: 44.8296% 0.00000%; background-size: 546.133%; }
+.patti-blinking-logo0017 {width: 375px; height: 300px; background-position: 67.2445% 0.00000%; background-size: 546.133%; }
+.patti-blinking-logo0018 {width: 375px; height: 300px; background-position: 89.6593% 0.00000%; background-size: 546.133%; }
+.patti-blinking-logo0019 {width: 375px; height: 300px; background-position: 0.00000% 41.4365%; background-size: 546.133%; }
+.patti-blinking-logo0020 {width: 375px; height: 300px; background-position: 22.4148% 41.4365%; background-size: 546.133%; }
+.patti-blinking-logo0021 {width: 375px; height: 300px; background-position: 44.8296% 41.4365%; background-size: 546.133%; }
+.patti-blinking-logo0022 {width: 375px; height: 300px; background-position: 67.2445% 41.4365%; background-size: 546.133%; }
+.patti-blinking-logo0023 {width: 375px; height: 300px; background-position: 89.6593% 41.4365%; background-size: 546.133%; }
